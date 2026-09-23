@@ -21,10 +21,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Space+Mono:wght@400;700&display=swap">
 <link rel="stylesheet" href="css/agassi.css">
 <style>
-.w1-stills{grid-template-columns:repeat(2,1fr);max-width:720px}
+.w1-stills{grid-template-columns:repeat(2,1fr)}
 .w2{background:none}
 .w2-film{max-width:420px;margin:0 auto 28px}
-.w2-stills{grid-template-columns:repeat(3,1fr)}
+.w2-stills{grid-template-columns:repeat(3,1fr);max-width:960px;margin-inline:auto}
+.ar-169{aspect-ratio:16/9}.ar-916{aspect-ratio:9/16}
 </style>
 </head>
 <body>
@@ -53,7 +54,7 @@
   </div>
 </section>
 
-<img class="bleed" style="--h:720px" src="assets/world_cover.jpg" srcset="assets/world_cover-800w.jpg 800w, assets/world_cover.jpg 1600w" sizes="100vw" width="1600" height="901" alt="AGASSI World — the parade" fetchpriority="high">
+<img class="bleed" style="--h:min(720px,56.25vw)" src="assets/world_cover.jpg" srcset="assets/world_cover-800w.jpg 800w, assets/world_cover.jpg 1600w" sizes="100vw" width="1600" height="901" alt="AGASSI World — the parade" fetchpriority="high">
 
 <section class="idea pad" aria-labelledby="idea-l">
   <div class="wrap">
@@ -72,8 +73,8 @@
       <iframe src="https://player.vimeo.com/video/1212010703" title="AGASSI WORLD 001" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="g w1-stills">
-      <img class="fx" style="--h:440px" src="assets/world001_sax.jpg" width="900" height="506" alt="Saxophone detail" loading="lazy" decoding="async">
-      <img class="fx off" style="--h:440px;--mt:40px" src="assets/world001_trumpet.jpg" width="900" height="506" alt="Trumpet player" loading="lazy" decoding="async">
+      <img class="cover ar-169" src="assets/world001_sax.jpg" width="900" height="506" alt="Saxophone detail" loading="lazy" decoding="async">
+      <img class="cover ar-169 off" style="--mt:40px" src="assets/world001_trumpet.jpg" width="900" height="506" alt="Trumpet player" loading="lazy" decoding="async">
     </div>
   </div>
 </section>
@@ -88,9 +89,9 @@
       <iframe src="https://player.vimeo.com/video/1212011133" title="AGASSI WORLD 002" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="g w2-stills">
-      <img class="fx" style="--h:520px" src="assets/world002_leap.jpg" width="800" height="1421" alt="Leap" loading="lazy" decoding="async">
-      <img class="fx off" style="--h:520px;--mt:40px" src="assets/world002_stairs.jpg" width="800" height="1421" alt="On the stairs" loading="lazy" decoding="async">
-      <img class="fx" style="--h:520px" src="assets/world002_boots.jpg" width="800" height="1421" alt="Boots in motion" loading="lazy" decoding="async">
+      <img class="cover ar-916" src="assets/world002_leap.jpg" width="800" height="1421" alt="Leap" loading="lazy" decoding="async">
+      <img class="cover ar-916 off" style="--mt:40px" src="assets/world002_stairs.jpg" width="800" height="1421" alt="On the stairs" loading="lazy" decoding="async">
+      <img class="cover ar-916" src="assets/world002_boots.jpg" width="800" height="1421" alt="Boots in motion" loading="lazy" decoding="async">
     </div>
   </div>
 </section>

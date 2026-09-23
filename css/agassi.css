@@ -89,7 +89,7 @@ em,.it{font-style:italic}
 .lockup-rule{flex:1;height:2px;background:var(--ink)}
 .lockup-studio{font-family:var(--f-serif);font-style:italic;font-weight:400;font-size:.62em;letter-spacing:-.01em;line-height:1}
 
-.pear-img{width:auto;max-width:100%;height:min(58vh,460px);object-fit:contain;filter:drop-shadow(0 26px 44px rgba(20,20,15,.13))}
+.pear-img{width:auto;max-width:100%;height:min(58vh,460px);aspect-ratio:1150/2012;object-fit:contain;filter:drop-shadow(0 26px 44px rgba(20,20,15,.13))}
 .stmt-rule{width:64px;height:1px;background:var(--hair-strong);margin-bottom:22px}
 .stmt{font-family:var(--f-sans);font-weight:500;font-size:clamp(30px,3.6vw,48px);line-height:1.1;letter-spacing:-.025em;max-width:600px;text-wrap:balance}
 .stmt .accent{font-weight:500}

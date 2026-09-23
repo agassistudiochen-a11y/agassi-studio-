@@ -25,20 +25,22 @@
 .ws-title{padding-top:70px;padding-bottom:60px}
 .ws-title .wrap > *{max-width:940px}
 .ws-film{padding-top:20px;padding-bottom:110px}
-.ws-film .media{max-width:760px;margin:0 auto}
+.ws-film .media{width:min(100%,760px);margin:0 auto}
+@supports (height:100svh){.ws-film .media{width:min(100%,760px,calc((100svh - 150px) * .75))}}
+.r-3x4{aspect-ratio:1280/1707}
 .ws-film .slot-label{margin-bottom:16px}
 .ws-stills{padding-bottom:40px}
 .ws-lead{grid-template-columns:1.55fr 1fr;gap:40px;margin-bottom:40px}
 .ws-side{padding-top:150px}
 .ws-caption{font-family:var(--f-serif);font-style:italic;font-size:20px;line-height:1.4;color:var(--body-muted);margin:26px 4px 0}
 .ws-duo-row{display:flex;justify-content:flex-end;margin-bottom:30px}
-.ws-duo{width:74%}
+img.ws-duo{width:52%}
 @media (max-width:767px){
   .ws-hero{height:auto}
   .ws-title{padding-top:48px;padding-bottom:40px}
   .ws-film{padding-bottom:64px}
   .ws-side{padding-top:0}
-  .ws-duo{width:100%}
+  img.ws-duo{width:100%}
 }
 </style>
 </head>
@@ -71,8 +73,8 @@
 <section class="ws-film pad" aria-labelledby="film-l">
   <div class="wrap">
     <h2 id="film-l" class="meta slot-label">The Film</h2>
-    <div class="media r-4x5">
-      <img src="assets/woodstock_video_poster.jpg" width="900" height="1200" alt="Woodstock film — video poster" loading="lazy" decoding="async">
+    <div class="media r-3x4">
+      <iframe src="https://player.vimeo.com/video/1229462474?h=ba660a3194" title="Woodstock AI Film" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
 </section>
@@ -80,14 +82,14 @@
 <section class="ws-stills pad" aria-label="Film stills">
   <div class="wrap">
     <div class="g ws-lead">
-      <img class="fx" style="--h:760px" src="assets/woodstock_still_stage.jpg" srcset="assets/woodstock_still_stage-800w.jpg 800w, assets/woodstock_still_stage.jpg 1200w" sizes="(max-width:767px) 100vw, 58vw" width="1200" height="1499" alt="On stage" loading="lazy" decoding="async">
+      <img class="cover" src="assets/woodstock_still_stage.jpg" srcset="assets/woodstock_still_stage-800w.jpg 800w, assets/woodstock_still_stage.jpg 1200w" sizes="(max-width:767px) 100vw, 58vw" width="1200" height="1499" alt="On stage" loading="lazy" decoding="async">
       <div class="ws-side">
-        <img class="fx" style="--h:440px" src="assets/woodstock_still_mic.jpg" width="800" height="1000" alt="At the microphone" loading="lazy" decoding="async">
+        <img class="cover" src="assets/woodstock_still_mic.jpg" width="800" height="1000" alt="At the microphone" loading="lazy" decoding="async">
         <p class="ws-caption">Directed shot by shot, from character and scene development through motion, edit and final pacing.</p>
       </div>
     </div>
     <div class="ws-duo-row">
-      <img class="fx ws-duo" style="--h:600px" src="assets/woodstock_still_duo.jpg" srcset="assets/woodstock_still_duo-800w.jpg 800w, assets/woodstock_still_duo.jpg 1200w" sizes="(max-width:767px) 100vw, 70vw" width="1200" height="1490" alt="The duo" loading="lazy" decoding="async">
+      <img class="cover ws-duo" src="assets/woodstock_still_duo.jpg" srcset="assets/woodstock_still_duo-800w.jpg 800w, assets/woodstock_still_duo.jpg 1200w" sizes="(max-width:767px) 100vw, 50vw" width="1200" height="1490" alt="The duo" loading="lazy" decoding="async">
     </div>
   </div>
 </section>
