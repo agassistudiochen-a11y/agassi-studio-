@@ -2,122 +2,135 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Music Covers &amp; Spotify Canvases — AGASSI | Chen Agassi</title>
-<meta name="description" content="Cover artwork paired with its looping Spotify Canvas — three releases, one design practice.">
-<meta property="og:title" content="Music Covers & Spotify Canvases — AGASSI">
-<meta property="og:description" content="Three releases, one design practice.">
+<meta name="description" content="Three releases, each developed as a visual pair: cover artwork and a looping Spotify Canvas designed to extend the same idea in motion.">
+<meta name="theme-color" content="#f6f4ef">
+<link rel="canonical" href="https://www.agassistudio.com/music.html">
+<meta property="og:url" content="https://www.agassistudio.com/music.html">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/music_jerusalem_cover.jpg">
+<meta property="og:site_name" content="AGASSI">
+<meta property="og:title" content="Music Covers &amp; Spotify Canvases — AGASSI">
+<meta property="og:description" content="Three releases, each developed as a visual pair: cover artwork and a looping Spotify Canvas.">
+<meta property="og:image" content="https://www.agassistudio.com/assets/music_jerusalem_cover.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/agassi_logo.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="css/agassi.css">
 <style>
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body { margin: 0; background: #f6f4ef; color: #151513; font-family: 'Archivo', sans-serif; -webkit-font-smoothing: antialiased; }
-  a { color: #151513; text-decoration: none; }
-  a:hover { color: #2e7d46; }
-  img { display: block; max-width: 100%; }
-
-  @media (max-width: 900px) {
-    section, .hdr { padding-left: 28px !important; padding-right: 28px !important; }
-  }
-  @media (max-width: 700px) {
-    section, .hdr { padding-left: 20px !important; padding-right: 20px !important; }
-    .g { grid-template-columns: 1fr !important; gap: 20px !important; }
-    h1 { font-size: clamp(34px, 10vw, 46px) !important; }
-  }
+.mu-head{padding-bottom:60px}
+.mu-head .wrap > *{max-width:1000px}
+.rel{padding-top:40px;padding-bottom:60px;border-top:1px solid var(--hair)}
+.rel--last{padding-bottom:70px}
+.rel-head{display:flex;align-items:baseline;gap:14px;margin-bottom:26px;flex-wrap:wrap}
+.rel-num{font:400 12px/1 var(--f-mono);color:var(--micro)}
+.rel-title{font-family:var(--f-serif);font-size:30px;line-height:1.15}
+.rel-title .by{font-style:italic;font-size:20px;color:var(--micro)}
+.rel .slot-label{margin-bottom:10px}
+.rel-a{grid-template-columns:1.5fr .62fr;gap:26px}
+.rel-b{grid-template-columns:.5563fr .5624fr 1fr;gap:26px}  /* two canvases + cover: widths follow ratios → equal heights */
+.r-dj1{aspect-ratio:1280/2301}
+.rel-c{grid-template-columns:1fr .62fr;gap:26px;max-width:900px}
+.ar-1{aspect-ratio:1/1}.ar-45{aspect-ratio:4/5}
+@media (max-width:767px){.rel-title{font-size:26px}.rel-title .by{display:block;font-size:17px;margin-top:4px}}
 </style>
 </head>
 <body>
-
-<div style="position: relative; width: 100%; overflow-x: hidden; background: #f6f4ef;">
-  <div class="hdr" style="position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; padding: 18px 56px; background: rgba(246,244,239,0.86); backdrop-filter: blur(6px); border-bottom: 1px solid rgba(0,0,0,0.08);">
-    <a href="index.html" style="display: flex; align-items: center; gap: 10px;">
-      <img src="assets/agassi_logo.png" alt="AGASSI" style="width: 30px; height: 30px; object-fit: cover; border-radius: 6px;">
-      <span style="font-family:'Archivo'; font-weight: 800; font-size: 15px; letter-spacing: 0.06em;">AGASSI</span>
-    </a>
-    <a href="index.html" style="font-family:'Archivo'; font-size: 13px; font-weight:500; letter-spacing: 0.04em; color: #4a4a46;">← All work</a>
-  </div>
-
-  <section style="padding: 90px 56px 60px; max-width: 1000px;">
-    <div style="font-family:'Space Mono',monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #2e7d46; margin-bottom: 24px;">05 — Collection</div>
-    <h1 style="margin: 0 0 26px; font-family:'Newsreader',serif; font-size: 60px; line-height: 1.02; font-weight: 400; letter-spacing: -0.015em;">Music Covers &amp; <span style="font-style:italic;">Spotify Canvases</span></h1>
-    <p style="font-family:'Archivo'; font-size: 18px; line-height: 1.6; color: #35352f; max-width: 600px; margin: 0; font-weight:400;">Cover artwork paired with its looping Spotify Canvas — three releases, one design practice.</p>
-  </section>
-
-  <!-- ===== 1 · WOODSTOCK — cover left, canvas right ===== -->
-  <section style="padding: 40px 56px 60px; border-top: 1px solid rgba(0,0,0,0.08);">
-    <div style="display:flex; align-items:baseline; gap:14px; margin-bottom: 26px;">
-      <span style="font-family:'Space Mono',monospace; font-size:12px; color:#8a8a84;">01</span>
-      <div style="font-family:'Newsreader',serif; font-size: 30px; color:#151513;">Woodstock <span style="font-style:italic; font-size:20px; color:#8a8a84;">— Sharon Attar × Omer Keinan</span></div>
-    </div>
-    <div class="g" style="display: grid; grid-template-columns: 1.5fr 0.62fr; gap: 26px; align-items: start;">
-      <div>
-        <div style="font-family:'Space Mono',monospace; font-size: 11px; color:#8a8a84; letter-spacing:.06em; margin-bottom: 10px;">COVER</div>
-        <img src="assets/music_woodstock_cover.jpg" alt="Woodstock cover" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
-      </div>
-      <div>
-        <div style="font-family:'Space Mono',monospace; font-size: 11px; color:#8a8a84; letter-spacing:.06em; margin-bottom: 10px;">CANVAS</div>
-        <div style="position: relative; width: 100%; aspect-ratio: 9/16; overflow:hidden; background:#151513;">
-          <img src="assets/music_woodstock_canvas.jpg" alt="Woodstock Canvas" style="position:absolute; inset:0; width:100%; height:100%; object-fit: cover;">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== 2 · DÉ JING — canvas left, cover right (flipped rhythm) ===== -->
-  <section style="padding: 40px 56px 60px; background:#f0eee6;">
-    <div style="display:flex; align-items:baseline; gap:14px; margin-bottom: 26px;">
-      <span style="font-family:'Space Mono',monospace; font-size:12px; color:#8a8a84;">02</span>
-      <div style="font-family:'Newsreader',serif; font-size: 30px; color:#151513;">Dé Jing <span style="font-style:italic; font-size:20px; color:#8a8a84;">— Sharon Attar · Guy Davidov</span></div>
-    </div>
-    <div class="g" style="display: grid; grid-template-columns: 0.62fr 1.5fr; gap: 26px; align-items: start;">
-      <div>
-        <div style="font-family:'Space Mono',monospace; font-size: 11px; color:#8a8a84; letter-spacing:.06em; margin-bottom: 10px;">CANVAS</div>
-        <div style="position: relative; width: 100%; aspect-ratio: 9/16; overflow:hidden; background:#151513;">
-          <img src="assets/music_dejing_canvas.jpg" alt="Dé Jing Canvas" style="position:absolute; inset:0; width:100%; height:100%; object-fit: cover;">
-        </div>
-      </div>
-      <div>
-        <div style="font-family:'Space Mono',monospace; font-size: 11px; color:#8a8a84; letter-spacing:.06em; margin-bottom: 10px;">COVER</div>
-        <img src="assets/music_dejing_cover.jpg" alt="Dé Jing cover" style="width: 100%; aspect-ratio: 1/1; object-fit: cover;">
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== 3 · JERUSALEM OF GOLD — portrait cover + canvas ===== -->
-  <section style="padding: 40px 56px 70px; border-top: 1px solid rgba(0,0,0,0.08);">
-    <div style="display:flex; align-items:baseline; gap:14px; margin-bottom: 26px;">
-      <span style="font-family:'Space Mono',monospace; font-size:12px; color:#8a8a84;">03</span>
-      <div style="font-family:'Newsreader',serif; font-size: 30px; color:#151513;">Jerusalem of Gold <span style="font-style:italic; font-size:20px; color:#8a8a84;">— Sharon Attar feat. Galia</span></div>
-    </div>
-    <div class="g" style="display: grid; grid-template-columns: 1fr 0.62fr; gap: 26px; align-items: start; max-width: 900px;">
-      <div>
-        <div style="font-family:'Space Mono',monospace; font-size: 11px; color:#8a8a84; letter-spacing:.06em; margin-bottom: 10px;">COVER</div>
-        <img src="assets/music_jerusalem_cover.jpg" alt="Jerusalem of Gold cover" style="width: 100%; aspect-ratio: 4/5; object-fit: cover;">
-      </div>
-      <div>
-        <div style="font-family:'Space Mono',monospace; font-size: 11px; color:#8a8a84; letter-spacing:.06em; margin-bottom: 10px;">CANVAS</div>
-        <div style="position: relative; width: 100%; aspect-ratio: 9/16; overflow:hidden; background:#151513;">
-          <iframe src="https://player.vimeo.com/video/1212015930" title="Jerusalem of Gold — Spotify Canvas" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen style="position:absolute; inset:0; width:100%; height:100%; border:0;"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <a href="artist-epk.html" style="display:block; padding: 90px 56px; border-top: 1px solid rgba(0,0,0,0.08);">
-    <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
-      <div><div style="font-family:'Space Mono',monospace; font-size:11px; color:#8a8a84; letter-spacing:.06em; margin-bottom:10px;">NEXT PROJECT</div><div style="font-family:'Newsreader',serif; font-size:44px; color:#151513;">Artist EPK Design <span style="font-style:italic; color:#8a8a84;">→</span></div></div>
-      <span style="font-family:'Archivo'; font-size:13px; font-weight:600; color:#4a4a46;">Back to all work</span>
-    </div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header pad">
+  <a href="index.html" aria-label="AGASSI — home">
+    <span class="logo-chip"><img src="assets/agassi_logo_primary.png" alt="" width="30" height="30"></span>
   </a>
-  <section style="padding: 70px 56px; background:#151513; color:#f6f4ef;">
-    <div style="max-width:1100px; margin:0 auto; display: flex; justify-content: space-between; align-items: center; font-family:'Space Mono',monospace; font-size: 12px; color: #9a9a92; flex-wrap: wrap; gap: 12px;"><span>AGASSI — Chen Agassi</span><a href="https://www.instagram.com/agassi.studio/" target="_blank" rel="noopener" style="color:#9a9a92;">@agassi.studio</a></div>
-  </section>
-</div>
+  <nav class="nav" aria-label="Primary">
+    <a href="index.html#work">Work</a>
+    <a href="index.html#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<main id="main">
+<section class="ph mu-head pad" aria-labelledby="p-title">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:24px">05 — Collection</p>
+    <h1 id="p-title" class="p-h1 p-h1--sm" style="margin-bottom:26px">Music Covers &amp; <em>Spotify Canvases</em></h1>
+    <p class="p-intro" style="margin-bottom:0">Three releases, each developed as a visual pair: cover artwork and a looping Spotify Canvas designed to extend the same idea in motion.</p>
+  </div>
+</section>
+
+<!-- 1 · WOODSTOCK — cover left, canvas right -->
+<section class="rel pad" aria-labelledby="r1">
+  <div class="wrap">
+    <div class="rel-head"><span class="rel-num">01</span><h2 id="r1" class="rel-title">Woodstock <span class="by">— Sharon Attar × Omer Keinan</span></h2></div>
+    <div class="g rel-a">
+      <div><span class="meta slot-label">Cover</span><img class="cover ar-1" src="assets/music_woodstock_cover.jpg" width="900" height="900" alt="Woodstock cover" loading="lazy" decoding="async"></div>
+      <div><span class="meta slot-label">Canvas</span><div class="media r-9x16"><iframe src="https://player.vimeo.com/video/1229462547?h=695d4ead3d" title="Woodstock — Spotify Canvas" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 · DÉ JING — canvas left, cover right -->
+<section class="rel pad" aria-labelledby="r2">
+  <div class="wrap">
+    <div class="rel-head"><span class="rel-num">02</span><h2 id="r2" class="rel-title">Dé Jing <span class="by">— Sharon Attar · Guy Davidov</span></h2></div>
+    <div class="g rel-b">
+      <div><span class="meta slot-label">Canvas 1</span><div class="media r-dj1"><iframe src="https://player.vimeo.com/video/1229463414?h=08672c4f14" title="Dé Jing — Spotify Canvas 1" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div>
+      <div><span class="meta slot-label">Canvas 2</span><div class="media r-9x16"><iframe src="https://player.vimeo.com/video/1229463413?h=c1a20f482c" title="Dé Jing — Spotify Canvas 2" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div>
+      <div><span class="meta slot-label">Cover</span><img class="cover ar-1" src="assets/music_dejing_cover.jpg" width="900" height="900" alt="Dé Jing cover" loading="lazy" decoding="async"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · JERUSALEM OF GOLD — portrait cover + canvas -->
+<section class="rel rel--last pad" aria-labelledby="r3">
+  <div class="wrap">
+    <div class="rel-head"><span class="rel-num">03</span><h2 id="r3" class="rel-title">Jerusalem of Gold <span class="by">— Sharon Attar feat. Galia</span></h2></div>
+    <div class="g rel-c">
+      <div><span class="meta slot-label">Cover</span><img class="cover ar-45" src="assets/music_jerusalem_cover.jpg" width="900" height="1132" alt="Jerusalem of Gold cover" loading="lazy" decoding="async"></div>
+      <div><span class="meta slot-label">Canvas</span><div class="media r-9x16"><iframe src="https://player.vimeo.com/video/1212015930" title="Jerusalem of Gold — Spotify Canvas" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div></div>
+    </div>
+  </div>
+</section>
+
+<a href="artist-epk.html" class="next pad">
+  <div class="wrap next-row">
+    <div>
+      <p class="label">Next project</p>
+      <p class="next-title">Artist Visual Identity &amp; EPK <span class="arrow" aria-hidden="true">→</span></p>
+    </div>
+    <span class="next-back">Back to all work</span>
+  </div>
+</a>
+<section id="contact" class="contact contact--compact pad" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <p class="eyebrow">Let's Create</p>
+        <h2 id="contact-title" class="contact-title">Start with the <span class="accent">idea</span>.</h2>
+      </div>
+      <div>
+        <p class="label">Get in touch</p>
+        <a href="mailto:agassistudio.chen@gmail.com" class="email">agassistudio.chen@gmail.com</a>
+        <div class="socials">
+          <a href="https://www.instagram.com/agassi.studio/" target="_blank" rel="noopener">Studio Instagram <span>— @agassi.studio</span></a>
+          <a href="https://www.instagram.com/chen_agassi/" target="_blank" rel="noopener">Personal Instagram <span>— @chen_agassi</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer pad">
+  <div class="wrap">
+    <div class="footer">
+      <span>AGASSI — Chen Agassi · Tel Aviv &amp; worldwide</span>
+      <nav aria-label="Social">
+        <a href="https://www.instagram.com/agassi.studio/" target="_blank" rel="noopener">@agassi.studio</a>
+        <a href="https://www.instagram.com/chen_agassi/" target="_blank" rel="noopener">@chen_agassi</a>
+      </nav>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

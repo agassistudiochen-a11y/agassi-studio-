@@ -2,227 +2,210 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AGASSI — Chen Agassi | Creative Studio</title>
-<meta name="description" content="AGASSI is an independent, idea-driven creative studio led by Chen Agassi. Visual identity, campaigns, AI imagery, motion, event design and cinematic storytelling.">
-<meta property="og:title" content="AGASSI — Chen Agassi">
-<meta property="og:description" content="Ideas worth remembering. Creative direction, visual identities and campaigns for brands, artists and culture.">
+<meta name="description" content="AGASSI is Chen Agassi’s independent creative studio for creative direction, visual identities, campaigns and films for brands, artists and culture.">
+<meta name="theme-color" content="#f6f4ef">
+<link rel="canonical" href="https://www.agassistudio.com/">
+<meta property="og:url" content="https://www.agassistudio.com/">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/world_cover.jpg">
+<meta property="og:site_name" content="AGASSI">
+<meta property="og:title" content="AGASSI — Chen Agassi">
+<meta property="og:description" content="Ideas that become worlds. Creative direction, visual identities, campaigns and films for brands, artists and culture.">
+<meta property="og:image" content="https://www.agassistudio.com/assets/world_cover.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/agassi_logo.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<style>
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body { margin: 0; background: #f6f4ef; color: #151513; font-family: 'Archivo', sans-serif; -webkit-font-smoothing: antialiased; }
-  a { color: #151513; text-decoration: none; }
-  a:hover { color: #2e7d46; }
-  img { display: block; max-width: 100%; }
-  .proj:hover img { transform: scale(1.03); }
-  .proj img { transition: transform 0.6s cubic-bezier(.2,.7,.2,1); }
-  .proj:hover .go { color: #2e7d46; }
-  @keyframes agspin { to { transform: rotate(360deg); } }
-
-  @media (max-width: 900px) {
-    section, .hdr { padding-left: 28px !important; padding-right: 28px !important; }
-  }
-  @media (max-width: 700px) {
-    section, .hdr { padding-left: 20px !important; padding-right: 20px !important; }
-    .g { grid-template-columns: 1fr !important; gap: 28px !important; }
-    .proj { margin-top: 0 !important; }
-    #top .g { display: block !important; }
-    #about .g { display: block !important; }
-    #about .g img { width: 140px !important; height: 186px !important; margin-bottom: 24px; }
-    #about .g > div { width: auto !important; height: auto !important; }
-    h1, #top h1 { font-size: clamp(38px, 11vw, 54px) !important; }
-    .work-thumb { height: 300px !important; }
-  }
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="css/agassi.css">
+<link rel="preload" as="image" href="assets/pear_silver_clean.webp" type="image/webp" fetchpriority="high">
 </head>
 <body>
-
-<div style="position: relative; width: 100%; overflow-x: hidden; background: #f6f4ef;">
-
-  <!-- HEADER -->
-  <div class="hdr" style="position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; padding: 18px 56px; background: rgba(246,244,239,0.86); backdrop-filter: blur(6px); border-bottom: 1px solid rgba(0,0,0,0.08);">
-    <a href="#top" style="display: flex; align-items: center;">
-      <img src="assets/agassi_logo.png" alt="AGASSI" style="height: 48px; width: 48px; object-fit: contain; border-radius: 9px;">
-    </a>
-    <div style="display: flex; gap: 30px; font-family:'Archivo'; font-size: 13px; font-weight:500; letter-spacing: 0.04em; color: #4a4a46;">
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header pad">
+  <a href="#top" aria-label="AGASSI — home">
+    <span class="logo-chip"><img src="assets/agassi_logo_primary.png" alt="" width="30" height="30"></span>
+  </a>
+  <nav class="nav" aria-label="Primary">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<main id="main">
+<!-- HERO -->
+<section id="top" class="hero pad" aria-label="Introduction">
+  <div class="wrap">
+    <div class="hero-meta">
+      <span>Independent creative studio by Chen Agassi</span>
+      <span>Tel Aviv &amp; worldwide</span>
     </div>
-    <div style="font-family:'Space Mono',monospace; font-size: 11px; letter-spacing: 0.08em; color: #8a8a84;">EN</div>
-  </div>
-
-  <!-- HERO (artistic, editorial) -->
-  <section id="top" style="padding: 92px 56px 104px;">
-    <div class="g" style="display:grid; grid-template-columns: 1.58fr 0.82fr; gap: 56px; align-items: end; max-width: 1280px;">
-
-      <!-- LEFT: big editorial headline -->
-      <div style="position: relative;">
-        <div style="font-family:'Space Mono',monospace; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #2e7d46; margin-bottom: 30px;">Creative Studio — Tel Aviv &amp; Worldwide</div>
-        <h1 style="margin: 0; font-family:'Newsreader',serif; font-weight: 400; font-size: clamp(58px, 8.8vw, 116px); line-height: 0.96; letter-spacing: -0.02em; color: #151513;">
-          <span style="display:block;">Ideas</span>
-          <span style="display:block;">worth
-            <span style="position: relative; display: inline-block; font-style: italic;">
-              <svg viewBox="0 0 720 120" preserveAspectRatio="none" aria-hidden="true" style="position:absolute; left:-3%; bottom:0.08em; width:110%; height:0.46em; z-index:0; overflow:visible;">
-                <path d="M8,72 C132,38 272,44 402,54 C502,61 602,52 692,38 C704,36 714,34 718,31 C707,50 667,60 592,66 C482,75 352,76 252,73 C162,70 80,76 12,86 Z" fill="#2e7d46"></path>
-                <path d="M638,28 C674,18 702,22 718,14 C702,38 670,44 634,46 C650,40 652,34 638,28 Z" fill="#2e7d46"></path>
-              </svg>
-              <span style="position: relative; z-index: 1;">remembering</span>
-            </span>.
-          </span>
+    <div class="hero-grid">
+      <div class="hw">
+        <p class="hero-kicker">Creative &amp; Art Direction</p>
+        <h1 class="lockup" aria-label="AGASSI Studio">
+          <span class="lockup-word" aria-hidden="true">AGASSI</span>
+          <span class="lockup-sub" aria-hidden="true"><span class="lockup-rule"></span><span class="lockup-studio">Studio</span></span>
         </h1>
       </div>
-
-      <!-- RIGHT: statement + link + rotating seal -->
-      <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 42px; padding-bottom: 10px;">
-        <div>
-          <p style="font-family:'Archivo',sans-serif; font-size: 18px; line-height: 1.62; color: #35352f; margin: 0 0 26px; max-width: 360px;">Creative direction, visual identities and campaigns for brands, artists and culture.</p>
-          <a href="#work" style="display: inline-flex; align-items: center; gap: 10px; font-family:'Archivo',sans-serif; font-size: 15px; font-weight: 700; color: #151513; border-bottom: 2px solid #2e7d46; padding-bottom: 5px;">See the work <span style="color: #2e7d46;">↓</span></a>
-        </div>
-
-        <div style="position: relative; width: 150px; height: 150px;">
-          <svg viewBox="0 0 200 200" width="150" height="150" style="overflow: visible; position:absolute; inset:0;">
-            <defs>
-              <path id="agcirc" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"></path>
-            </defs>
-            <g style="transform-origin: 100px 100px; animation: agspin 28s linear infinite;">
-              <text font-family="'Space Mono', monospace" font-size="12.5" letter-spacing="3.2" fill="#151513"><textPath href="#agcirc" startOffset="0">AGASSI STUDIO · CREATIVE DIRECTION · </textPath></text>
-            </g>
-          </svg>
-          <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
-            <img src="assets/agassi_logo.png" alt="AGASSI" style="width: 66px; height: 66px; border-radius: 50%; object-fit: cover;">
-          </div>
-        </div>
+      <div class="hp">
+        <picture>
+          <source type="image/webp" srcset="assets/pear_silver_clean-600h.webp 343w, assets/pear_silver_clean.webp 526w" sizes="(max-width:767px) 170px, 263px">
+          <img class="pear-img" src="assets/pear_silver_clean.png" alt="AGASSI silver pear symbol" width="526" height="920" fetchpriority="high">
+        </picture>
       </div>
-
+      <div class="hs">
+        <div class="stmt-rule" aria-hidden="true"></div>
+        <p class="stmt">Ideas that become <span class="accent">worlds</span>.</p>
+        <p class="hero-support">Creative direction, visual identities, campaigns and films for brands, artists and culture.</p>
+        <a href="#work" class="cta">See selected work <span class="arrow" aria-hidden="true">↓</span></a>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- WORK INDEX -->
-  <section id="work" style="padding: 40px 56px 40px; border-top: 1px solid rgba(0,0,0,0.08);">
-    <div style="display: flex; align-items: baseline; justify-content: space-between; margin: 30px 0 44px; flex-wrap: wrap; gap: 12px;">
-      <div style="font-family:'Newsreader',serif; font-size: 30px; color:#151513;">Selected <span style="font-style:italic;">work</span></div>
-      <div style="font-family:'Space Mono',monospace; font-size: 12px; color: #8a8a84; letter-spacing:.04em;">06 PROJECTS · 2024–25</div>
-    </div>
-
-    <div class="g" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 44px 40px;">
-
-      <a href="world.html" class="proj" style="display:block;">
-        <div style="overflow:hidden;">
-          <img class="work-thumb" src="assets/world_cover.jpg" alt="AGASSI World" style="width: 100%; height: 460px; object-fit: cover;">
-        </div>
-        <div style="display:flex; align-items:baseline; justify-content:space-between; margin-top:16px;">
-          <div>
-            <div style="font-family:'Space Mono',monospace; font-size:11px; color:#8a8a84; letter-spacing:.06em; margin-bottom:6px;">01 — WORLDBUILDING · AI MOTION</div>
-            <div style="font-family:'Newsreader',serif; font-size:26px; color:#151513;">AGASSI World</div>
-          </div>
-          <span class="go" style="font-family:'Archivo'; font-size:22px; color:#151513;">→</span>
-        </div>
-      </a>
-
-      <a href="masha.html" class="proj" style="display:block; margin-top:56px;">
-        <div style="overflow:hidden;">
-          <img class="work-thumb" src="assets/masha_fiction_cover.jpg" alt="MASHA" style="width: 100%; height: 460px; object-fit: cover; object-position: center 30%;">
-        </div>
-        <div style="display:flex; align-items:baseline; justify-content:space-between; margin-top:16px;">
-          <div>
-            <div style="font-family:'Space Mono',monospace; font-size:11px; color:#8a8a84; letter-spacing:.06em; margin-bottom:6px;">02 — CAMPAIGN · BRAND SYSTEM</div>
-            <div style="font-family:'Newsreader',serif; font-size:26px; color:#151513;">MASHA</div>
-          </div>
-          <span class="go" style="font-family:'Archivo'; font-size:22px; color:#151513;">→</span>
-        </div>
-      </a>
-
-      <a href="events.html" class="proj" style="display:block;">
-        <div style="overflow:hidden;">
-          <img class="work-thumb" src="assets/event_soul606_keyvisual.jpg" alt="Event visuals" style="width: 100%; height: 460px; object-fit: cover;">
-        </div>
-        <div style="display:flex; align-items:baseline; justify-content:space-between; margin-top:16px;">
-          <div>
-            <div style="font-family:'Space Mono',monospace; font-size:11px; color:#8a8a84; letter-spacing:.06em; margin-bottom:6px;">03 — EVENT IDENTITY · TEASER FILMS</div>
-            <div style="font-family:'Newsreader',serif; font-size:26px; color:#151513;">Visual Identity for Events</div>
-          </div>
-          <span class="go" style="font-family:'Archivo'; font-size:22px; color:#151513;">→</span>
-        </div>
-      </a>
-
-      <a href="woodstock.html" class="proj" style="display:block; margin-top:56px;">
-        <div style="overflow:hidden;">
-          <img class="work-thumb" src="assets/woodstock_cover.jpg" alt="Woodstock AI Film" style="width: 100%; height: 460px; object-fit: cover; object-position: center 30%;">
-        </div>
-        <div style="display:flex; align-items:baseline; justify-content:space-between; margin-top:16px;">
-          <div>
-            <div style="font-family:'Space Mono',monospace; font-size:11px; color:#8a8a84; letter-spacing:.06em; margin-bottom:6px;">04 — CINEMATIC · AI FILM</div>
-            <div style="font-family:'Newsreader',serif; font-size:26px; color:#151513;">Woodstock AI Film</div>
-          </div>
-          <span class="go" style="font-family:'Archivo'; font-size:22px; color:#151513;">→</span>
-        </div>
-      </a>
-
-      <a href="music.html" class="proj" style="display:block;">
-        <div style="overflow:hidden; height:460px; display:flex; gap:10px; align-items:center; justify-content:center; background:#f0eee6; padding:20px;" class="work-thumb">
-          <img src="assets/music_woodstock_cover.jpg" alt="Woodstock cover" style="width: 30%; aspect-ratio:1/1; object-fit: cover; transform: rotate(-3deg); box-shadow:0 10px 26px rgba(20,20,15,0.18);">
-          <img src="assets/music_jerusalem_cover.jpg" alt="Jerusalem of Gold cover" style="width: 34%; aspect-ratio:4/5; object-fit: cover; z-index:2; box-shadow:0 14px 34px rgba(20,20,15,0.24);">
-          <img src="assets/music_dejing_cover.jpg" alt="Dé Jing cover" style="width: 30%; aspect-ratio:1/1; object-fit: cover; transform: rotate(3deg); box-shadow:0 10px 26px rgba(20,20,15,0.18);">
-        </div>
-        <div style="display:flex; align-items:baseline; justify-content:space-between; margin-top:16px;">
-          <div>
-            <div style="font-family:'Space Mono',monospace; font-size:11px; color:#8a8a84; letter-spacing:.06em; margin-bottom:6px;">05 — MUSIC COVERS &amp; SPOTIFY CANVASES</div>
-            <div style="font-family:'Newsreader',serif; font-size:26px; color:#151513;">Music Covers &amp; Spotify Canvases</div>
-          </div>
-          <span class="go" style="font-family:'Archivo'; font-size:22px; color:#151513;">→</span>
-        </div>
-      </a>
-
-      <a href="artist-epk.html" class="proj" style="display:block; margin-top:56px;">
-        <div style="overflow:hidden; height:460px; background:#151513; display:flex; align-items:center; justify-content:center;" class="work-thumb">
-          <img src="assets/artist_epk_main.jpg" alt="Artist Visual Identity &amp; EPK" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div style="display:flex; align-items:baseline; justify-content:space-between; margin-top:16px;">
-          <div>
-            <div style="font-family:'Space Mono',monospace; font-size:11px; color:#8a8a84; letter-spacing:.06em; margin-bottom:6px;">06 — ARTIST IDENTITY · EPK</div>
-            <div style="font-family:'Newsreader',serif; font-size:26px; color:#151513;">Artist Visual Identity &amp; EPK</div>
-          </div>
-          <span class="go" style="font-family:'Archivo'; font-size:22px; color:#151513;">→</span>
-        </div>
-      </a>
-
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" style="padding: 120px 56px; margin-top: 60px; border-top: 1px solid rgba(0,0,0,0.08);">
-    <div class="g" style="display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 64px; align-items: center;">
-      <img src="assets/chen_portrait_v2.jpg" alt="Chen Agassi" style="width: 214px; height: 286px; object-fit: cover">
+<!-- SELECTED WORK -->
+<section id="work" class="work pad" aria-labelledby="work-title">
+  <div class="wrap">
+    <div class="work-head">
       <div>
-        <div style="font-family:'Space Mono',monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #2e7d46; margin-bottom: 24px;">About Chen</div>
-        <div style="font-family:'Newsreader',serif; font-size: 44px; font-weight:400; margin-bottom: 26px; letter-spacing:-0.01em;">Hi, I'm <span style="font-style:italic;">Chen Agassi</span>.</div>
-        <p style="font-family:'Archivo'; font-size: 18px; line-height: 1.65; color: #35352f; max-width: 540px; margin: 0 0 20px;">I combine creative thinking, visual design, art direction, storytelling, production and modern technologies to lead projects from the first idea through final execution.</p>
-        <p style="font-family:'Archivo'; font-size: 18px; line-height: 1.65; color: #35352f; max-width: 540px; margin: 0 0 34px;">I partner with brands, artists, festivals and agencies — starting from an idea worth remembering, and building everything around it.</p>
-        <div style="font-family:'Space Mono',monospace; font-size: 13px; color: #8a8a84;">agassistudio.chen@gmail.com · <a href="https://www.instagram.com/agassi.studio/" target="_blank" rel="noopener" style="color:#8a8a84; border-bottom:1px solid rgba(0,0,0,0.18);">@agassi.studio</a> · <a href="https://www.instagram.com/chen_agassi/" target="_blank" rel="noopener" style="color:#8a8a84; border-bottom:1px solid rgba(0,0,0,0.18);">@chen_agassi</a></div>
+        <p class="eyebrow">Selected Work</p>
+        <h2 id="work-title" class="work-title">A curated selection of worlds, campaigns, films and <em>identities</em>.</h2>
+      </div>
+      <p class="work-count">06 SELECTED PROJECTS</p>
+    </div>
+
+    <!-- 01 -->
+    <a href="world.html" class="proj p-world">
+      <div class="exh-two">
+        <div class="ptext">
+          <p class="meta">01 · Worldbuilding / Film / AI</p>
+          <h3 class="ptitle ptitle--lg">AGASSI World</h3>
+          <p class="blurb">Two films, two chapters, one evolving cinematic world — creative direction, worldbuilding and AI-assisted production.</p>
+          <span class="pcta">View project <span class="arrow" aria-hidden="true">→</span></span>
+        </div>
+        <div class="frame">
+          <img class="img-world" src="assets/world_cover.jpg" srcset="assets/world_cover-800w.jpg 800w, assets/world_cover.jpg 1600w" sizes="(max-width:767px) 100vw, 56vw" width="1600" height="901" alt="AGASSI World — the parade" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </a>
+
+    <!-- 02 -->
+    <a href="masha.html" class="proj p-masha">
+      <div class="exh-two">
+        <div class="frame">
+          <img class="img-masha" src="assets/masha_fiction_cover.jpg" srcset="assets/masha_fiction_cover-800w.jpg 800w, assets/masha_fiction_cover.jpg 1600w" sizes="(max-width:767px) 100vw, 56vw" width="1600" height="1999" alt="MASHA — the assembly" loading="lazy" decoding="async">
+        </div>
+        <div class="ptext">
+          <p class="meta">02 · Brand World / Campaign</p>
+          <h3 class="ptitle ptitle--lg">MASHA</h3>
+          <p class="blurb">A self-initiated fictional watch brand grown into a full identity, campaign world and two advertising films.</p>
+          <span class="pcta">View project <span class="arrow" aria-hidden="true">→</span></span>
+        </div>
+      </div>
+    </a>
+
+    <!-- 03 + 04 -->
+    <div class="pair">
+      <a href="events.html" class="proj p-events">
+        <div class="frame">
+          <img class="img-events" src="assets/event_soul606_keyvisual.jpg" width="900" height="1613" alt="SOUL 6.6 key visual" loading="lazy" decoding="async">
+        </div>
+        <div class="pcap">
+          <p class="meta">03 · Event Identity / Motion</p>
+          <h3 class="ptitle ptitle--md">Visual Identity for Events</h3>
+        </div>
+      </a>
+      <a href="woodstock.html" class="proj p-woodstock">
+        <div class="frame">
+          <img class="img-woodstock" src="assets/woodstock_cover.jpg" srcset="assets/woodstock_cover-800w.jpg 800w, assets/woodstock_cover.jpg 1600w" sizes="(max-width:767px) 100vw, 54vw" width="1600" height="1986" alt="Woodstock AI Film" loading="lazy" decoding="async">
+        </div>
+        <div class="pcap">
+          <p class="meta">04 · Cinematic AI Film</p>
+          <h3 class="ptitle ptitle--md">Woodstock AI Film</h3>
+        </div>
+      </a>
+    </div>
+
+    <!-- 05 -->
+    <a href="music.html" class="proj p-music">
+      <div class="music-head">
+        <p class="meta">05 · Cover Art / Motion</p>
+        <h3 class="ptitle">Music Covers &amp; Spotify Canvases</h3>
+      </div>
+      <div class="music-grid">
+        <div class="frame"><img src="assets/music_woodstock_cover.jpg" width="900" height="900" alt="Woodstock cover" loading="lazy" decoding="async"></div>
+        <div class="frame"><img src="assets/music_dejing_cover.jpg" width="900" height="900" alt="Dé Jing cover" loading="lazy" decoding="async"></div>
+        <div class="frame"><img src="assets/music_jerusalem_cover.jpg" width="900" height="1132" alt="Jerusalem of Gold cover" loading="lazy" decoding="async"></div>
+      </div>
+    </a>
+
+    <!-- 06 -->
+    <a href="artist-epk.html" class="proj p-epk exh-epk">
+      <div class="frame">
+        <img class="img-epk" src="assets/artist_epk_main.jpg" srcset="assets/artist_epk_main-800w.jpg 800w, assets/artist_epk_main.jpg 1400w" sizes="(max-width:767px) 100vw, 46vw" width="1400" height="990" alt="Sharon Attar EPK" loading="lazy" decoding="async">
+      </div>
+      <div class="ptext">
+        <p class="meta">06 · Artist Identity / EPK</p>
+        <h3 class="ptitle ptitle--lg">Artist Visual Identity &amp; EPK</h3>
+        <p class="blurb">A visual identity system for electronic artist Sharon Attar — from logo and EPK to promotional and digital materials.</p>
+        <span class="pcta">View project <span class="arrow" aria-hidden="true">→</span></span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about pad" aria-labelledby="about-title">
+  <div class="wrap">
+    <h2 id="about-title" class="eyebrow">About / Chen Agassi</h2>
+    <div class="about-row">
+      <figure class="about-portrait">
+        <img src="assets/chen_portrait_bw.jpg" width="480" height="617" alt="Portrait of Chen Agassi, founder of AGASSI" loading="lazy" decoding="async">
+        <figcaption>Chen Agassi — Founder</figcaption>
+      </figure>
+      <div class="about-body">
+        <p class="about-lead">AGASSI is my independent creative studio for ideas that need a <span class="accent">world</span> around them.</p>
+        <p class="about-txt">I work across creative direction, visual identity, campaigns and moving image, shaping projects from concept through design and production.</p>
+        <p class="about-txt">I collaborate with brands, artists, festivals and agencies on work that needs a strong idea, a distinct point of view and the flexibility to live across formats.</p>
+        <p class="label">Capabilities</p>
+        <p class="caps">Creative Direction · Art Direction · Visual Identity · Campaigns · Film · AI Visual Production</p>
       </div>
     </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" style="padding: 150px 56px 120px; border-top: 1px solid rgba(0,0,0,0.08); background:#151513; color:#f6f4ef; text-align: center;">
-    <div style="font-family:'Space Mono',monospace; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:#6fbf8a; margin-bottom:22px;">Let's Create</div>
-    <div style="font-family:'Newsreader',serif; font-size: 72px; font-weight:400; letter-spacing: -0.01em; margin-bottom: 28px; line-height:1.02;">Start with the <span style="font-style:italic;">idea</span>.</div>
-    <p style="font-family:'Archivo'; font-size: 18px; color: #cfcdc6; margin: 0 0 40px;">Have a project in mind? Let's build everything around it.</p>
-    <a href="mailto:agassistudio.chen@gmail.com" style="display: inline-block; font-family:'Archivo'; font-size: 16px; font-weight: 700; color: #151513; background: #f6f4ef; padding: 18px 42px;">agassistudio.chen@gmail.com</a>
-    <div style="margin: 90px auto 0; max-width: 1100px; padding-top: 30px; border-top: 1px solid rgba(246,244,239,0.16); display: flex; justify-content: space-between; align-items: center; font-family:'Space Mono',monospace; font-size: 12px; color: #9a9a92; flex-wrap: wrap; gap: 12px;">
-      <span>AGASSI — Chen Agassi</span>
-      <span style="display:flex; gap:18px;"><a href="https://www.instagram.com/agassi.studio/" target="_blank" rel="noopener" style="color:#9a9a92;">@agassi.studio</a><a href="https://www.instagram.com/chen_agassi/" target="_blank" rel="noopener" style="color:#9a9a92;">@chen_agassi</a></span>
+  </div>
+</section>
+<section id="contact" class="contact pad" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <p class="eyebrow">Let's Create</p>
+        <h2 id="contact-title" class="contact-title">Start with the <span class="accent">idea</span>.</h2>
+        <p class="contact-sub">For collaborations, commissions and new projects.</p>
+      </div>
+      <div>
+        <p class="label">Get in touch</p>
+        <a href="mailto:agassistudio.chen@gmail.com" class="email">agassistudio.chen@gmail.com</a>
+        <div class="socials">
+          <a href="https://www.instagram.com/agassi.studio/" target="_blank" rel="noopener">Studio Instagram <span>— @agassi.studio</span></a>
+          <a href="https://www.instagram.com/chen_agassi/" target="_blank" rel="noopener">Personal Instagram <span>— @chen_agassi</span></a>
+        </div>
+      </div>
     </div>
-  </section>
-
-</div>
+  </div>
+</section>
+</main>
+<footer class="site-footer pad">
+  <div class="wrap">
+    <div class="footer">
+      <span>AGASSI — Chen Agassi · Tel Aviv &amp; worldwide</span>
+      <nav aria-label="Social">
+        <a href="https://www.instagram.com/agassi.studio/" target="_blank" rel="noopener">@agassi.studio</a>
+        <a href="https://www.instagram.com/chen_agassi/" target="_blank" rel="noopener">@chen_agassi</a>
+      </nav>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
