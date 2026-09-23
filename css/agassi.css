@@ -59,6 +59,7 @@ em,.it{font-style:italic}
 .cta:hover .arrow{transform:translateY(3px)}
 .pcta{display:inline-block;font:400 11px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);border-bottom:1.5px solid var(--green);padding-bottom:4px}
 .pcta .arrow{margin-left:2px}
+.pcta--m{display:none}  /* VIEW PROJECT for 03/04/05 — shown on mobile only */
 
 /* ---------- Imagery: hard edges, subtle hover (§8, §11) ---------- */
 .frame{overflow:hidden}
@@ -286,6 +287,60 @@ em,.it{font-style:italic}
   .fx,.bleed{height:auto}
   .off{margin-top:0}
   .next{padding-top:64px;padding-bottom:64px}
+}
+/* ---------- Mobile polish (≤767): hero rhythm, touch targets, one structure per project ---------- */
+@media (max-width:767px){
+  /* header: ~44px touch targets without visual change */
+  .nav a{padding:16px 6px;margin:-8px -6px}
+
+  /* hero: slightly tighter, still spacious */
+  .hero{padding-top:16px;padding-bottom:18px}
+  .hero-meta{padding-bottom:12px;row-gap:6px;font-size:10.5px;letter-spacing:.12em}
+  .hero-grid{margin-top:16px}
+  .hero-kicker{margin-bottom:16px}
+  .hp{margin:4px 0 0}
+  .hs{padding-top:10px}
+  .stmt-rule{margin-bottom:18px}
+  .hero-support{margin:18px 0 22px}
+
+  /* selected work: IMAGE → meta → title → copy → VIEW PROJECT, for all six */
+  .work{padding-top:52px;padding-bottom:24px}
+  .work-head{margin-bottom:40px}
+  .p-world .exh-two,.p-masha .exh-two{gap:18px}
+  .p-world .frame{order:-1}
+  .exh-epk{gap:18px}
+  .p-epk .frame{order:0}
+  .p-epk .ptext{order:1}
+  .pair{gap:56px}
+  .p-world,.p-masha,.pair,.p-music{margin-bottom:56px}
+  .proj .ptitle,.music-head .ptitle{font-size:30px;line-height:1.05;margin:8px 0 14px;text-wrap:balance}
+  .blurb{margin-bottom:18px}
+  .p-music{display:flex;flex-direction:column}
+  .music-grid{order:-1;margin-bottom:18px}
+  .music-head{display:block;margin-bottom:0}
+  .pcta--m{display:inline-block}
+  .proj .pcta{align-self:flex-start}
+
+  /* about: ~18% tighter rhythm, portrait size unchanged */
+  .about{padding-top:72px;padding-bottom:72px}
+  .about > .wrap > .eyebrow{padding-top:22px;margin-bottom:36px}
+  .about-row{gap:22px}
+  .about-lead{margin-bottom:24px}
+  .about-txt{margin-bottom:14px}
+  .about-body .label{margin-top:28px}
+
+  /* contact: slightly less air, generous tap areas */
+  .contact{padding-top:64px}
+  .contact > .wrap{padding-top:56px}
+  .contact .eyebrow{margin-bottom:20px}
+  .contact-sub{margin-top:20px}
+  .contact-grid{gap:30px}
+  .email{margin-bottom:18px;padding-top:6px}
+  .socials{gap:4px}
+  .socials a{padding-block:8px}
+  .footer{margin-top:52px}
+  .footer nav a{padding-block:10px}
+  .site-footer{padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))}
 }
 @media (max-width:440px){
   .pear-img{height:238px}
